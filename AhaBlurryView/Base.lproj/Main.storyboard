@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uk-Zo-lia">
+                                <rect key="frame" x="531" y="120" width="51" height="31"/>
+                            </switch>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ioe-k6-tED">
+                                <rect key="frame" x="20" y="201" width="560" height="391"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW8-5f-8id">
+                                <rect key="frame" x="20" y="60" width="204" height="41"/>
+                                <string key="text">床前明月光，疑是地上霜。
+举头望明月，低头思故乡。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ioe-k6-tED" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Blu-98-ErF"/>
+                            <constraint firstItem="OW8-5f-8id" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CG0-DD-dEy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4uk-Zo-lia" secondAttribute="trailing" id="ESr-BK-3mK"/>
+                            <constraint firstItem="ioe-k6-tED" firstAttribute="top" secondItem="4uk-Zo-lia" secondAttribute="bottom" constant="8" id="Jyn-BY-nMC"/>
+                            <constraint firstItem="OW8-5f-8id" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="60" id="Uy5-6x-GQV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ioe-k6-tED" secondAttribute="bottom" constant="8" id="fdB-tF-zNT"/>
+                            <constraint firstItem="4uk-Zo-lia" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="pGi-Ig-OcJ"/>
+                            <constraint firstItem="ioe-k6-tED" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rvL-S6-Cso"/>
+                            <constraint firstItem="ioe-k6-tED" firstAttribute="top" secondItem="OW8-5f-8id" secondAttribute="bottom" constant="100" id="zcc-mN-neY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Jyn-BY-nMC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="314" y="415"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_bg" width="540" height="960"/>
+    </resources>
+</document>
