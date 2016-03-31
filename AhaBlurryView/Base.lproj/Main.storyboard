@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uk-Zo-lia">
-                                <rect key="frame" x="531" y="120" width="51" height="31"/>
+                                <rect key="frame" x="531" y="60" width="51" height="31"/>
                             </switch>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ioe-k6-tED">
                                 <rect key="frame" x="20" y="201" width="560" height="391"/>
@@ -41,6 +41,7 @@
                             <constraint firstItem="ioe-k6-tED" firstAttribute="top" secondItem="4uk-Zo-lia" secondAttribute="bottom" constant="8" id="Jyn-BY-nMC"/>
                             <constraint firstItem="OW8-5f-8id" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="60" id="Uy5-6x-GQV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ioe-k6-tED" secondAttribute="bottom" constant="8" id="fdB-tF-zNT"/>
+                            <constraint firstItem="4uk-Zo-lia" firstAttribute="top" secondItem="OW8-5f-8id" secondAttribute="top" id="kOs-QF-7lM"/>
                             <constraint firstItem="4uk-Zo-lia" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="pGi-Ig-OcJ"/>
                             <constraint firstItem="ioe-k6-tED" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rvL-S6-Cso"/>
                             <constraint firstItem="ioe-k6-tED" firstAttribute="top" secondItem="OW8-5f-8id" secondAttribute="bottom" constant="100" id="zcc-mN-neY"/>
@@ -48,6 +49,7 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="Jyn-BY-nMC"/>
+                                <exclude reference="pGi-Ig-OcJ"/>
                             </mask>
                         </variation>
                     </view>
